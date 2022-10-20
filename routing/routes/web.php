@@ -18,14 +18,26 @@ Route::get('/', function () {
 });
 
 // Basic Route
-Route::get('/index', function () {
-    return 'Welcome';
+Route::get('index', function () {
+    return view("index");
 });
 
 //controller route
 
-Route::get('/index', [myController::class, 'view']);
+Route::get('/index', [Controller::class, 'view']);
 
+
+
+//Routing with 1 Parametre
+
+
+Route::get('/index/{id}',function($age){ 
+    return "my age is :  $age yo"; }); 
+
+   // Routing with 2 Parametre 
+
+    Route::get('/index/{id}/{name}',function($id,$name){ 
+        return "ID : $id <br> Name : $name"; });
 
 
 
