@@ -16,17 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-// Basic Route
-Route::get('/index', function () {
-    return 'Welcome';
-});
-
-//controller route
-
-Route::get('/index', [myController::class, 'view']);
-
-
-
-
-
