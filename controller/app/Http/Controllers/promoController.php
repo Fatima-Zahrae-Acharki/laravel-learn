@@ -13,7 +13,8 @@ class promoController extends Controller
      */
     public function index()
     {
-        //
+        return "<h1>Promotions list :</h1>";
+   
     }
 
     /**
@@ -23,7 +24,7 @@ class promoController extends Controller
      */
     public function create()
     {
-        //
+        return "<h1>Add a promotion :</h1>";
     }
 
     /**
@@ -34,7 +35,7 @@ class promoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return "<h1>Create a new promotion</h1>";
     }
 
     /**
@@ -45,7 +46,7 @@ class promoController extends Controller
      */
     public function show($id)
     {
-        //
+        return "<h1>Display promotion num ".$id."</h1>";
     }
 
     /**
@@ -56,7 +57,7 @@ class promoController extends Controller
      */
     public function edit($id)
     {
-        //
+        return "<h1>Edit promotion num ".$id."</h1>";
     }
 
     /**
@@ -68,7 +69,7 @@ class promoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        return "<h1>Update promotion num ".$id."</h1>";
     }
 
     /**
@@ -79,6 +80,6 @@ class promoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // return "<h1>Distroy promotion num ".$id."</h1>";
     }
 }
