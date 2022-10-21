@@ -19,7 +19,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [promoController::class, 'index']);
 
-
-
+//smth
  
 Route::resource('index', PromoController::class);
