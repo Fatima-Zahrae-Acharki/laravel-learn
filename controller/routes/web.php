@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/', [promoController::class, 'index']);
+Route::get('/', [PromoController::class, 'index']);
 
-//smth
+
  
 Route::resource('index', PromoController::class);
